@@ -1,0 +1,152 @@
+:root {
+    --gradient: linear-gradient(90deg, #f7e816, #2a11df, #2596be);
+}
+
+body {
+    font-family: basic-sans, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    position: relative;
+    background-color: transparent;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, #f7e816, #2a11df, #2596be);
+    background-size: 300% 300%;
+    animation: AnimatedGradientBackground 5s infinite linear;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4vw;
+    color: white;
+    margin-top: 0;
+}
+
+.title {
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4rem;
+    line-height: 0.8;
+    margin: 0;
+    color: transparent;
+    -webkit-background-clip: text; 
+    background-clip: text;
+    background-image: var(--gradient);
+    background-size: 200% 100%; 
+    animation: AnimatedGradientText 5s infinite linear;
+}
+
+.logo {
+    padding-top: 15px;
+    display: inline-block;
+    vertical-align: right;
+    margin-left: 1em;
+    max-width: 100px;
+    height: auto;
+}
+
+.button {
+    display: block;
+    margin-top: 1em;
+    background-color: #2a11df;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.button2 {
+    display: block;
+    margin-top: 1em;
+    background-color: #2a11df;
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button3 {
+    display: block;
+    margin-top: 1em;
+    background-color: #2a11df;
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.button:hover {
+    background-color: #2a11df;
+}
+
+@keyframes AnimatedGradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimatedGradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
